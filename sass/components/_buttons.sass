@@ -1,0 +1,30 @@
+.btn
+  font-family: $font-two
+  display: inline-block
+  font-size: 1.4em
+  padding: 1em 2.5em
+  text:
+    transform: uppercase
+    decoration: none
+
+  &:not(:last-of-type)
+  margin-bottom: .6em
+  transition: 400ms
+
+
+.btn--primary
+   border: 2px solid $secondary
+   color: $secondary
+   &:hover, &:focus
+    background: $secondary
+    color: white
+    border-color: $secondary
+
+
+.btn--secondary
+   border: 2px solid $secondary
+   color: purple
+   &:hover, &:focus
+    background: $secondary
+    color: white
+    border-color: white
