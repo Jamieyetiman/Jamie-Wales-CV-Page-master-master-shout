@@ -9,6 +9,14 @@
   overflow: hidden
 
   transition: all ease-in-out 300ms
+  @media(min-width: 725px)
+    font-size: 2rem
+    position: relative
+    flex: auto
+    background: none
+    left: 0
+
+
 
   ul
     display: flex
@@ -16,24 +24,40 @@
     justify-content: space-around
     height: 100vh
 
-    li
-      flex-grow: 1 1 auto
-      border-bottom: 1px solid white
-      display: flex
-      align-items: center
+    @media(min-width: 725px)
+      flex-direction: row
+      height: auto
       justify-content: center
 
+  li
+    flex-grow: 1 1 auto
+    border-bottom: 1px solid white
+    display: flex
+    align-items: center
 
-      a
-        color: white
-        text-decoration: none
-        flex-basis: 100%
-        display: flex
-        align-items: center
-        justify-content: center
 
-        &:hover
-          background: rgba(0, 0, 0, 0.1)
+    @media(min-width: 725px)
+      border: none
+      padding-left: 3em
+      padding-right: 3em
+  a
+    color: white
+    text-decoration: none
+    flex-basis: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    @media(min-width: 725px)
+      color: black
+  a:hover
+      color: black
+      transition: 200ms
+
+  @media(min-width: 725px)
+    a:hover
+        border-bottom: 4px solid $secondary
+        transition: 100ms
+
 
 .is-open
     left: 0
@@ -47,6 +71,8 @@
   right: 1em
   top: 1em
   cursor: pointer
+  @media(min-width: 725px)
+    display: none
 
 
 .hamburger, .hamburger::before, .hamburger::after
@@ -74,3 +100,7 @@
 
     &::before
       opacity: 0
+
+
+.selected
+  border-bottom: solid 4px $secondary

@@ -1,31 +1,36 @@
 footer
-  background: $main
-  color: $white
-  padding: 2em 0
-  background-position: center
+  background: black
+  color: white
+
+  a
+    color: $secondary
+
+.social-links
+  display: flex
+  font-size: 4rem
+  justify-content: center
+  li
+    padding: .5rem
+
+
+
+.social-links :hover
+  color: white
+  transition: 200ms
 
 
 
 .nav-footer
   display: flex
-  justify-content: space-around
-  width: 50%
-  margin: 0 auto
-  font-size: 1rem
-  @media(min-width: 725px)
-    font-size: 3rem
-
-
-
-
-
-.social-links
-  display: flex
   font-size: 2rem
-  opacity: 0.9
-  width: 100%
-
-
-a
+  justify-content: space-around
   text-decoration: none
-  color: $text-inverse
+  width: 80%
+  margin: 0 auto
+  a
+    text-decoration: none
+
+
+.nav-footer :hover
+  color: white
+  transition: 200ms
