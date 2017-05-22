@@ -237,9 +237,8 @@ p {
 
 .welcome-text {
   font-family: "Gloria Hallelujah", cursive, sans-serif;
-  font-size: 1.5rem;
-  line-height: 1.2;
-  padding: 1em; }
+  font-size: 1rem;
+  line-height: 1.2; }
   .welcome-text span {
     color: #8d0085;
     font-size: 3rem;
@@ -247,10 +246,14 @@ p {
     line-height: 2rem; }
   @media (min-width: 1100px) {
     .welcome-text {
-      padding-top: 5em;
-      font-size: 2rem; }
+      padding: 1rem;
+      font-size: 1.7rem; }
       .welcome-text span {
-        font-size: 10rem; } }
+        font-size: 10rem;
+        padding: .5rem; } }
+
+.welcome-txt {
+  padding: 3em; }
 
 .main-header {
   position: absolute;
@@ -497,6 +500,111 @@ footer {
 .nav-footer :hover {
   color: white;
   transition: 200ms; }
+
+.hover-anim {
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out; }
+
+.cd-contact-form {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  height: auto;
+  color: white;
+  z-index: 100;
+  opacity: 1 !important;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+
+#cd-contact-left {
+  padding: 5px;
+  width: 45%;
+  max-width: 500px;
+  margin-top: 12%; }
+
+#cd-contact-right {
+  padding: 5px;
+  width: 45%;
+  max-width: 500px;
+  margin-top: 12%; }
+
+.cd-form-style {
+  width: 100%;
+  max-width: 800px; }
+
+.cd-form-style h2 {
+  background: #fff;
+  text-transform: uppercase;
+  color: #8d0085;
+  font-size: 18px;
+  font-weight: 100; }
+
+.cd-form-style input[type="text"],
+.cd-form-style input[type="date"],
+.cd-form-style input[type="datetime"],
+.cd-form-style input[type="email"],
+.cd-form-style input[type="number"],
+.cd-form-style input[type="search"],
+.cd-form-style input[type="time"],
+.cd-form-style input[type="url"],
+.cd-form-style input[type="password"],
+.cd-form-style textarea,
+.cd-form-style select {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  outline: none;
+  display: block;
+  width: 100%;
+  padding: 7px;
+  font-family: "Gloria Hallelujah", cursive, sans-serif;
+  border: none;
+  border-bottom: 1px dotted #ddd;
+  background: transparent;
+  margin: 10px 0 20px 0;
+  font-size: 16px;
+  color: #8d0085;
+  font-weight: bold;
+  height: 45px; }
+
+.cd-form-style textarea {
+  font-family: "Gloria Hallelujah", cursive, sans-serif;
+  resize: none;
+  overflow: scroll;
+  color: #8d0085; }
+
+.cd-form-style input[type="button"],
+.cd-form-style input[type="submit"] {
+  background-color: transparent;
+  border: 1px solid #8d0085;
+  display: inline-block;
+  cursor: pointer;
+  color: #8d0085;
+  font-family: "Gloria Hallelujah", cursive, sans-serif;
+  font-size: 12px;
+  padding: 8px 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-top: 40px;
+  float: right; }
+
+.cd-form-style input[type="button"]:hover,
+.cd-form-style input[type="submit"]:hover {
+  background-color: #8d0085;
+  font-weight: bold;
+  color: white; }
 
 .btn {
   font-family: "Gloria Hallelujah", cursive, sans-serif;

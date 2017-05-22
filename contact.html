@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <link href='css/main.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device=width,initial-scale=1"/>
+  <title>Jamie Wales</title>
+
+
+</head>
+<body>
+  <header class='main-header'>
+    <div class='container grid'>
+      <nav class ='main-nav col'>
+        <ul class ='unstyled-list nav-list'>
+          <li> <a href='index.html'>Home</a></li>
+          <li> <a href='about.html' class = 'selected'>About</a></li>
+          <li> <a href='Contact.html'>Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class='nav-toggle'>
+        <div class='hamburger'>
+        </div>
+      </div>
+    </div>
+    </header>
+  <section class ='about-hero'>
+    <div class = 'container grid'>
+        <div class='hero-text col'>
+          <h1 class='title-large'>About <span>Jamie Wales</span></h1>
+          <p class='text-intro'> <span>N</span>ow you've seen some tasty front-end skillz, yes that's skillz</span> with a z, how about some personality.</p>
+        </div>
+      </div>
+  </section>
+
+  <div class="cd-contact-form flex-parent cd-form-style">
+    <form id="cd-contact-left">
+      <input type="text" name="field1" placeholder="NAME" required/>
+      <input type="email" name="field2" placeholder="EMAIL" required/>
+    </form>
+
+    <form id="cd-contact-right">
+      <textarea placeholder="MESSAGE" onkeyup="adjust_textarea(this)" required></textarea>
+      <input type="button" value="Send Message" class="hover-anim" />
+    </form>
+  </div>
+</body>
